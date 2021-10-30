@@ -1,1 +1,40 @@
-// TODO
+.header {
+  padding: 4rem 0;
+}
+
+.post {
+  & + & {
+    margin-top: 3rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.375;
+
+    margin-bottom: 1.5rem;
+  }
+}
+
+.post__section {
+  margin-bottom: 6rem;
+}
+
+.button__load {
+  font-weight: 600;
+  color: var(--highlight);
+  background-color: transparent;
+  border: none;
+
+  margin-top: 4rem;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
