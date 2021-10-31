@@ -29,3 +29,21 @@
     margin-right: 0.5rem;
   }
 }
+
+.button--preview {
+  background-color: var(--heading);
+  padding: 1.125rem;
+  width: 100%;
+  border-radius: 4px;
+  text-align: center;
+  color: var(--background);
+  font-weight: 600;
+  font-size: 1.125rem;
+  cursor: pointer;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
+}

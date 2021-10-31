@@ -5,25 +5,6 @@ import { RichText } from 'prismic-dom';
 import { Post as HomePost } from '../pages';
 import { Post as SlugPost } from '../pages/post/[slug]';
 
-// export interface Post {
-//   uid?: string;
-//   first_publication_date: string | null;
-//   data: {
-//     title: string;
-//     subtitle: string;
-//     author: string;
-//     banner: {
-//       url: string;
-//     };
-//     content: {
-//       heading: string;
-//       body: {
-//         text: string;
-//       }[];
-//     }[];
-//   };
-// }
-
 export const formatPosts = (posts: HomePost[]) => {
   const formatedPosts = posts.map(post => ({
     uid: post.uid,
@@ -79,3 +60,8 @@ export const formatPost = (post: SlugPost) => ({
     })),
   },
 });
+
+export const formatEditDate = (date: string) =>
+  format(new Date(date), "'* editado em' dd MMM yyyy, 'às' kk:mm", {
+    locale: ptBR,
+  });

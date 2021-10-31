@@ -30,11 +30,16 @@
   background-color: transparent;
   border: none;
 
-  margin-top: 4rem;
+  // margin-top: 4rem;
+  margin-bottom: 5.5rem;
 
   transition: filter 0.2s;
 
   &:hover {
     filter: brightness(0.8);
   }
+}
+
+.button--preview {
+  margin-bottom: 5.5rem;
 }

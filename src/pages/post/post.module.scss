@@ -8,8 +8,17 @@
   margin-bottom: 4rem;
 }
 
+.edit-info {
+  display: block;
+  margin-top: 1rem;
+}
+
 .post {
   margin-bottom: 3rem;
+
+  &:last-of-type {
+    margin-bottom: 3.75rem;
+  }
 }
 
 .post__title {
@@ -21,4 +30,44 @@
 .post__body {
   font-size: 1.125rem;
   margin-bottom: 1.5rem;
+}
+
+.footer {
+  padding: 3rem 0 5rem;
+  border-top: 1px solid rgba(215, 215, 215, 0.1);
+
+  & > * + * {
+    margin-top: 5rem;
+  }
+}
+
+.navigation-links__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-links__container {
+  max-width: 20rem;
+}
+
+.navigation-links__container--next {
+  margin-left: auto;
+  text-align: right;
+}
+
+.navigation-links__title {
+  font-size: 1.125rem;
+  color: var(--heading);
+  margin-bottom: 0.5rem;
+}
+
+.navigation-link {
+  color: var(--highlight);
+  font-weight: 600;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
 }
